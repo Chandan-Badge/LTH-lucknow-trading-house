@@ -10,30 +10,40 @@ export const metadata = {
 
 function Contact() {
   return (
-    <div className="min-h-screen bg-black py-12 pt-40 pb-16">
+    <div className="min-h-screen bg-black py-12 pt-36 pb-16">
 
       <BackgroundBeams />
 
       <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-4 text-white">Contact Us</h1>
-      <p className='text-center text-gray-400 max-w-lg mx-auto'>We're here to help with any questions about out courses, program or events. Reach out and let us know how we can assist you in success journey.</p>
+      <p className='text-center text-gray-400 max-w-xl mx-auto'>We're here to help with any questions about out courses, program or events. Reach out and let us know how we can assist you in success journey.</p>
 
       {/* <Meteors number={400} /> */}
       <form
         action=""
-        className="mx-auto flex flex-col justify-start items-center mt-4 gap-4 w-2xl"
+        className="mx-auto flex flex-col justify-start items-center mt-8 gap-4 w-2xl"
       >
+
+        <input
+          type="number"
+          name=""
+          id=""
+          placeholder="Enter phone number"
+          required
+          className="num-inp bg-gray-800 w-full h-12 px-4 py-2 rounded border-2 border-transparent focus:border-teal-600 focus:outline-none focus:ring-0"
+        />
+
         <input
           type="email"
           name=""
           id=""
-          placeholder="Your email address"
+          placeholder="Enter email address"
           required
           className="bg-gray-800 w-full h-12 px-4 py-2 rounded border-2 border-transparent focus:border-teal-600 focus:outline-none focus:ring-0"
         />
 
         <textarea
-          rows={8}
-          placeholder="Your message"
+          rows={6}
+          placeholder="Enter message"
           required
           className="bg-gray-800 w-full px-4 py-3 rounded border-2 border-transparent focus:border-teal-600 focus:outline-none focus:ring-0"
         ></textarea>

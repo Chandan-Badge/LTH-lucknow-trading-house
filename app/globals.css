@@ -150,3 +150,10 @@ body {
 .stock-ticker .minus::before {
   color: #f23645;
 }
+
+/* Remove arrows from number input */
+.num-inp::-webkit-inner-spin-button,
+.num-inp::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

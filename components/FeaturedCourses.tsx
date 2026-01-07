@@ -62,10 +62,10 @@ function FeaturedCourses() {
                                     >
                                         <span>Learn More</span>
                                         {/* <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-                                                Rs 100
-                                            </span> */}
+                                            Rs 100
+                                        </span> */}
                                     </Link>
-                                    
+
                                 </BackgroundGradient>
                             </div>
                         ))
@@ -75,7 +75,7 @@ function FeaturedCourses() {
 
             <div className='mt-20 text-center'>
                 <Link href={"/courses"}
-                    className='px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200'>
+                    className='px-4 py-2 rounded border border-neutral-600 text-neutral-700 hover:text-[#fff] bg-white hover:bg-[#10a3d7] transition-all ease-in-out duration-150'>
                     View All Courses
                 </Link>
             </div>
