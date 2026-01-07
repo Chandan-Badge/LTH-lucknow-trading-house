@@ -35,8 +35,8 @@ function HeroSection() {
 
                 {/* </div> */}
 
-                <div className="stock-ticker">
-                    <ul>
+                <div className="stock-ticker mt-28 text-sm overflow-hidden select-none flex">
+                    <ul className='flex-shrink-0 min-w-full flex justify-between items-center'>
                         <li className="minus">
                             <span className="company">AAPL</span>
                             <span className="price">181.16</span>
@@ -79,7 +79,7 @@ function HeroSection() {
                         </li>
                     </ul>
 
-                    <ul aria-hidden="true">
+                    <ul aria-hidden="true" className='flex-shrink-0 min-w-full flex justify-between items-center'>
                         <li className="minus">
                             <span className="company">AAPL</span>
                             <span className="price">181.16</span>
