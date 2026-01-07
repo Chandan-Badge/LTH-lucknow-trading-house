@@ -22,10 +22,9 @@ function Navbar({ className }: { className?: string }) {
           <MenuItem setActive={setActive} active={active} item="Courses">
             <div className="flex flex-col space-y-4 text-sm">
               <HoveredLink href="/courses">All Courses</HoveredLink>
-              <HoveredLink href="/courses/web-dev">Web Development</HoveredLink>
-              <HoveredLink href="/courses/interface-design">Interface Design</HoveredLink>
-              <HoveredLink href="/courses/seo">Search Engine Optimization</HoveredLink>
-              <HoveredLink href="/courses/branding">Branding</HoveredLink>
+              <HoveredLink href="/courses/fttp">F.T.T.P. (Full Time Trading Program)</HoveredLink>
+              <HoveredLink href="/courses/uptp">U.P.T.P.</HoveredLink>
+              <HoveredLink href="/courses/ptp">P.T.P.</HoveredLink>
             </div>
           </MenuItem>
         {/* </Link> */}
@@ -39,9 +38,9 @@ function Navbar({ className }: { className?: string }) {
           </MenuItem>
         </Link>
 
-        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Book a Call</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
+        <button className="group border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+          <span>Join Masterclass</span>
+          <span className="absolute inset-x-0 w-1/2 group-hover:w-full h-px mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent transition-all duration-300 ease-in-out" />
         </button>
 
       </Menu>

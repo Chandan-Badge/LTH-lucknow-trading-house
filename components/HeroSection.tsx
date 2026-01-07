@@ -22,18 +22,18 @@ function HeroSection() {
                 <h1 className='mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400'>Master this Course</h1>
                 <p className='mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-xl mx-auto'>Physics is a fundamental course that explores the basic laws governing nature and the universe. It helps students understand concepts such as motion, force, energy, matter, electricity.</p>
 
-                <div>
-                    <button className='mt-4'>
-                        <Link href={"/courses"}>
-                            <Button
-                                borderRadius='1.75rem'
-                                className='bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800'
-                            >
-                                Explore Courses
-                            </Button>
-                        </Link>
-                    </button>
-                </div>
+                {/* <div> */}
+
+                <Link href={"/courses"} className='mt-4'>
+                    <Button
+                        borderRadius='1.75rem'
+                        className='bg-white dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800'
+                    >
+                        Explore Courses
+                    </Button>
+                </Link>
+
+                {/* </div> */}
             </div>
         </div>
     )
