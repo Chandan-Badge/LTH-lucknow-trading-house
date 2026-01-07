@@ -22,7 +22,6 @@ function HeroSection() {
                 <h1 className='mt-20 md:mt-0 text-4xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400'>Master this Course</h1>
                 <p className='mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-xl mx-auto'>Physics is a fundamental course that explores the basic laws governing nature and the universe. It helps students understand concepts such as motion, force, energy, matter, electricity.</p>
 
-                {/* <div> */}
 
                 <Link href={"/courses"} className='mt-4'>
                     <Button
@@ -33,10 +32,9 @@ function HeroSection() {
                     </Button>
                 </Link>
 
-                {/* </div> */}
 
-                <div className="stock-ticker mt-28 text-sm overflow-hidden select-none flex">
-                    <ul className='flex-shrink-0 min-w-full flex justify-between items-center'>
+                <div className="stock-ticker mt-28 text-sm overflow-hidden select-none flex border-y border-white p-2">
+                    <ul className='shrink-0 min-w-full flex justify-between items-center'>
                         <li className="minus">
                             <span className="company">AAPL</span>
                             <span className="price">181.16</span>
@@ -79,7 +77,7 @@ function HeroSection() {
                         </li>
                     </ul>
 
-                    <ul aria-hidden="true" className='flex-shrink-0 min-w-full flex justify-between items-center'>
+                    <ul aria-hidden="true" className='shrink-0 min-w-full flex justify-between items-center'>
                         <li className="minus">
                             <span className="company">AAPL</span>
                             <span className="price">181.16</span>

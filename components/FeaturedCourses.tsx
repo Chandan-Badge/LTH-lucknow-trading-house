@@ -5,6 +5,8 @@ import { IconAppWindow } from "@tabler/icons-react";
 import courseData from "../data/courses.json";
 import Link from 'next/link';
 
+import ptp from "../public/course-list/1.ptp.png";
+
 interface Course {
     courseId: string,
     courseName: string,
@@ -37,7 +39,7 @@ function FeaturedCourses() {
                                 <BackgroundGradient className="flex flex-col h-full overflow-hidden rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
                                     <img
                                         src={`https://images.pexels.com/photos/60582/newton-s-cradle-balls-sphere-action-60582.jpeg?cs=srgb&dl=pexels-pixabay-60582.jpg&fm=jpg`}
-                                        alt="jordans"
+                                        alt="course"
                                         height="400"
                                         width="400"
                                         className="object-contain"
