@@ -1,0 +1,137 @@
+{
+    "courses": [
+        {
+            "courseId": "PHY101",
+            "courseName": "Classical Mechanics",
+            "courseDescription": "Learn the fundamentals of motion, force, energy, and Newtonian mechanics.",
+            "topics": [
+                "Kinematics",
+                "Laws of Motion",
+                "Work & Energy",
+                "Momentum"
+            ],
+            "bestseller": true,
+            "durationWeek": 8,
+            "level": "Beginner"
+        },
+        {
+            "courseId": "PHY102",
+            "courseName": "Electromagnetism",
+            "courseDescription": "Understand electric fields, magnetic fields, and electromagnetic waves.",
+            "topics": [
+                "Coulomb's Law",
+                "Electric Fields",
+                "Magnetism",
+                "Maxwell Equations"
+            ],
+            "bestseller": true,
+            "durationWeek": 10,
+            "level": "Intermediate"
+        },
+        {
+            "courseId": "PHY103",
+            "courseName": "Thermodynamics",
+            "courseDescription": "Study heat, work, temperature, and the laws of thermodynamics.",
+            "topics": [
+                "Laws of Thermodynamics",
+                "Entropy",
+                "Heat Transfer"
+            ],
+            "bestseller": false,
+            "durationWeek": 7,
+            "level": "Intermediate"
+        },
+        {
+            "courseId": "PHY104",
+            "courseName": "Waves and Oscillations",
+            "courseDescription": "Explore wave motion, sound waves, and harmonic oscillators.",
+            "topics": [
+                "Simple Harmonic Motion",
+                "Wave Equation",
+                "Sound Waves"
+            ],
+            "bestseller": false,
+            "durationWeek": 6,
+            "level": "Beginner"
+        },
+        {
+            "courseId": "PHY105",
+            "courseName": "Optics",
+            "courseDescription": "Learn about light behavior, lenses, mirrors, and optical instruments.",
+            "topics": [
+                "Reflection",
+                "Refraction",
+                "Interference",
+                "Diffraction"
+            ],
+            "bestseller": true,
+            "durationWeek": 6,
+            "level": "Beginner"
+        },
+        {
+            "courseId": "PHY106",
+            "courseName": "Modern Physics",
+            "courseDescription": "Introduction to relativity, quantum mechanics, and atomic structure.",
+            "topics": [
+                "Photoelectric Effect",
+                "Relativity",
+                "Atomic Models"
+            ],
+            "bestseller": true,
+            "durationWeek": 9,
+            "level": "Advanced"
+        },
+        {
+            "courseId": "PHY107",
+            "courseName": "Quantum Mechanics",
+            "courseDescription": "Deep dive into quantum theory and particle behavior.",
+            "topics": [
+                "Wave Function",
+                "Schrödinger Equation",
+                "Operators"
+            ],
+            "bestseller": false,
+            "durationWeek": 12,
+            "level": "Advanced"
+        },
+        {
+            "courseId": "PHY108",
+            "courseName": "Nuclear Physics",
+            "courseDescription": "Study nuclear structure, radioactivity, and nuclear reactions.",
+            "topics": [
+                "Radioactivity",
+                "Nuclear Fission",
+                "Nuclear Fusion"
+            ],
+            "bestseller": false,
+            "durationWeek": 8,
+            "level": "Advanced"
+        },
+        {
+            "courseId": "PHY109",
+            "courseName": "Solid State Physics",
+            "courseDescription": "Understand crystal structures and electronic properties of solids.",
+            "topics": [
+                "Crystal Lattices",
+                "Band Theory",
+                "Semiconductors"
+            ],
+            "bestseller": false,
+            "durationWeek": 10,
+            "level": "Intermediate"
+        },
+        {
+            "courseId": "PHY110",
+            "courseName": "Astrophysics",
+            "courseDescription": "Explore stars, galaxies, black holes, and the universe.",
+            "topics": [
+                "Stellar Evolution",
+                "Galaxies",
+                "Cosmology"
+            ],
+            "bestseller": true,
+            "durationWeek": 11,
+            "level": "Intermediate"
+        }
+    ]
+}
