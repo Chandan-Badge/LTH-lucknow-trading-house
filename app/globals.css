@@ -35,6 +35,7 @@ body {
     opacity: 0;
     transform: translate(-72%, -62%) scale(0.5);
   }
+
   100% {
     opacity: 1;
     transform: translate(-50%, -40%) scale(1);
@@ -44,7 +45,7 @@ body {
 /* infinite moving cards */
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
- 
+
   @keyframes scroll {
     to {
       transform: translate(calc(-50% - 0.5rem));
@@ -55,15 +56,17 @@ body {
 /* Meteors */
 @theme inline {
   --animate-meteor-effect: meteor 5s linear infinite;
-  
+
   @keyframes meteor {
     0% {
       transform: rotate(215deg) translateX(0);
       opacity: 1;
     }
+
     70% {
       opacity: 1;
     }
+
     100% {
       transform: rotate(215deg) translateX(-500px);
       opacity: 0;
@@ -73,18 +76,113 @@ body {
 
 /* background ripple */
 @theme inline {
-  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1
-    var(--delay, 0ms);
- 
+  --animate-cell-ripple: cell-ripple var(--duration, 200ms) ease-out none 1 var(--delay, 0ms);
+
   @keyframes cell-ripple {
     0% {
       opacity: 0.4;
     }
+
     50% {
       opacity: 0.8;
     }
+
     100% {
       opacity: 0.4;
     }
   }
+}
+
+/* Infinite scroll */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} */
+
+img {
+  max-width: 100%;
+}
+
+/* body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131722;
+  background-color: #f7f8fd;
+  padding: 100px 50px;
+} */
+
+h1 {
+  text-align: center;
+  margin-block-end: 2.5rem;
+}
+
+.stock-ticker {
+  font-size: 15px;
+  padding-block: 8px;
+  border-block: 1px solid;
+  overflow: hidden;
+  user-select: none;
+
+  --gap: 20px;
+  display: flex;
+  gap: var(--gap);
+}
+
+.stock-ticker ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: scroll 20s linear infinite;
+}
+
+.stock-ticker:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.stock-ticker ul:first-child {
+  /* background-color: yellow; */
+}
+
+.stock-ticker ul:last-child {
+  /* background-color: pink; */
+}
+
+.stock-ticker .company,
+.stock-ticker .price {
+  font-weight: bold;
+}
+
+.stock-ticker .price {
+  margin-inline: 4px;
+}
+
+.stock-ticker .plus::before {
+  content: "↑";
+}
+
+.stock-ticker .minus::before {
+  content: "↓";
+}
+
+.stock-ticker .plus .change,
+.stock-ticker .plus::before {
+  color: #089981;
+}
+
+.stock-ticker .minus .change,
+.stock-ticker .minus::before {
+  color: #f23645;
 }
